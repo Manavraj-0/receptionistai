@@ -1,3 +1,5 @@
+import Footer from "@/components/Footer";
+
 export default function Home() {
   return (
     <main>
@@ -331,6 +333,227 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Pricing Section */}
+      <section id="pricing" className="pricing-section">
+        <div className="container">
+
+          <div className="pricing-header">
+            <div className="pricing-header-left">
+              <p className="pricing-eyebrow">Pricing</p>
+              <h2 className="pricing-headline">
+                Clear, honest pricing.<br />No surprises.
+              </h2>
+            </div>
+            <div className="pricing-header-right">
+              <p className="pricing-header-desc">
+                Every plan includes a fully configured AI receptionist, built for your business. Pick the level that fits your call volume and grow from there.
+              </p>
+              <a href="mailto:daizyaiinfo@gmail.com" className="pricing-header-link">
+                Book a Call
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+              </a>
+            </div>
+          </div>
+          <div className="pricing-cards pricing-cards--three">
+
+            {/* Starter Plan */}
+            <div className="pricing-card pricing-card--light">
+              <div className="pricing-card-header">
+                <span className="pricing-plan-name">Starter</span>
+                <p className="pricing-plan-desc">Best suited for smaller operations or initial setup.</p>
+                <div className="pricing-card-rule"></div>
+              </div>
+              <div className="pricing-card-body">
+                <ul className="pricing-features">
+                  <li className="pricing-feature">
+                    <svg className="pricing-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    1 call handling system
+                  </li>
+                  <li className="pricing-feature">
+                    <svg className="pricing-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Up to 300 minutes / month
+                  </li>
+                  <li className="pricing-feature">
+                    <svg className="pricing-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Lead qualification &amp; booking
+                  </li>
+                  <li className="pricing-feature">
+                    <svg className="pricing-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Ongoing support
+                  </li>
+                </ul>
+              </div>
+              <div className="pricing-card-footer">
+                <div className="pricing-price">
+                  <span className="pricing-amount">&pound;299</span>
+                  <span className="pricing-period">/ month</span>
+                </div>
+                <a href="mailto:daizyaiinfo@gmail.com" className="pricing-cta pricing-cta--light">
+                  Get started
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                </a>
+              </div>
+            </div>
+
+            {/* Growth Plan — Popular */}
+            <div className="pricing-card pricing-card--dark">
+              <div className="pricing-card-header">
+                <div className="pricing-card-header-top">
+                  <span className="pricing-plan-name">Growth</span>
+                  <span className="pricing-badge">Most Popular</span>
+                </div>
+                <p className="pricing-plan-desc pricing-plan-desc--dark">Designed for businesses with consistent enquiry volume.</p>
+                <div className="pricing-card-rule pricing-card-rule--dark"></div>
+              </div>
+              <div className="pricing-card-body">
+                <ul className="pricing-features">
+                  <li className="pricing-feature">
+                    <svg className="pricing-check pricing-check--accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Up to 2 call handling systems
+                  </li>
+                  <li className="pricing-feature">
+                    <svg className="pricing-check pricing-check--accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Up to 1000 minutes / month
+                  </li>
+                  <li className="pricing-feature">
+                    <svg className="pricing-check pricing-check--accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Advanced workflows
+                  </li>
+                  <li className="pricing-feature">
+                    <svg className="pricing-check pricing-check--accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Priority support
+                  </li>
+                </ul>
+              </div>
+              <div className="pricing-card-footer">
+                <div className="pricing-price">
+                  <span className="pricing-amount pricing-amount--white">&pound;599</span>
+                  <span className="pricing-period pricing-period--white">/ month</span>
+                </div>
+                <a href="mailto:daizyaiinfo@gmail.com" className="pricing-cta pricing-cta--accent">
+                  Get started
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                </a>
+              </div>
+            </div>
+
+            {/* Scale Plan */}
+            <div className="pricing-card pricing-card--light">
+              <div className="pricing-card-header">
+                <span className="pricing-plan-name">Scale</span>
+                <p className="pricing-plan-desc">Designed for higher-volume or expanding businesses.</p>
+                <div className="pricing-card-rule"></div>
+              </div>
+              <div className="pricing-card-body">
+                <ul className="pricing-features">
+                  <li className="pricing-feature">
+                    <svg className="pricing-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Multiple workflows / systems
+                  </li>
+                  <li className="pricing-feature">
+                    <svg className="pricing-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Higher usage capacity
+                  </li>
+                  <li className="pricing-feature">
+                    <svg className="pricing-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Advanced routing &amp; logic
+                  </li>
+                  <li className="pricing-feature">
+                    <svg className="pricing-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Ongoing optimisation
+                  </li>
+                </ul>
+              </div>
+              <div className="pricing-card-footer">
+                <div className="pricing-price">
+                  <span className="pricing-amount">&pound;999</span>
+                  <span className="pricing-period">/ month</span>
+                </div>
+                <a href="mailto:daizyaiinfo@gmail.com" className="pricing-cta pricing-cta--light">
+                  Get started
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          {/* Meta Ads Management Add-on */}
+          <div className="meta-ads-section">
+            <div className="meta-ads-header">
+              <div className="meta-ads-header-left">
+                <p className="meta-ads-eyebrow">Add-on</p>
+                <h3 className="meta-ads-title">Meta Ads Management</h3>
+              </div>
+              <p className="meta-ads-desc">
+                To generate consistent enquiries, we manage Meta Ads alongside the system. Ad spend is paid directly by you to Meta — fully transparent, no hidden fees, separate from management fees.
+              </p>
+            </div>
+
+            <div className="meta-ads-body">
+              {/* Fee table */}
+              <div className="meta-ads-table-wrap">
+                <p className="meta-ads-table-label">Management Fees — Based on Ad Budget</p>
+                <table className="meta-ads-table">
+                  <thead>
+                    <tr>
+                      <th>Ad Spend</th>
+                      <th>Management Fee</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>&pound;300 – &pound;500 / month</td>
+                      <td>&pound;100 – &pound;150 / month</td>
+                    </tr>
+                    <tr>
+                      <td>&pound;500 – &pound;1,000 / month</td>
+                      <td>&pound;150 – &pound;250 / month</td>
+                    </tr>
+                    <tr>
+                      <td>&pound;1,000 – &pound;2,000 / month</td>
+                      <td>&pound;250 – &pound;400 / month</td>
+                    </tr>
+                    <tr>
+                      <td>&pound;2,000+ / month</td>
+                      <td>Custom — based on scale</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              {/* What's Included */}
+              <div className="meta-ads-included">
+                <p className="meta-ads-table-label">What&apos;s Included</p>
+                <ul className="meta-ads-included-list">
+                  <li>
+                    <svg className="pricing-check pricing-check--accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Campaign setup
+                  </li>
+                  <li>
+                    <svg className="pricing-check pricing-check--accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Targeting strategy
+                  </li>
+                  <li>
+                    <svg className="pricing-check pricing-check--accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Ad structure &amp; copy
+                  </li>
+                  <li>
+                    <svg className="pricing-check pricing-check--accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Ongoing optimisation
+                  </li>
+                  <li>
+                    <svg className="pricing-check pricing-check--accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Performance tracking
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section id="faq" className="faq-section">
         <div className="container">
@@ -418,28 +641,13 @@ export default function Home() {
           </p>
           <div className="cta-actions">
             <a href="tel:+441234987233" className="cta-btn-primary">Call the Demo First</a>
-            <a href="mailto:hello@receptionistai.com" className="cta-btn-secondary">Get in Touch</a>
+            <a href="mailto:daizyaiinfo@gmail.com" className="cta-btn-secondary">Get in Touch</a>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="site-footer">
-        <div className="container footer-container">
-          <div className="footer-brand">
-            <span className="footer-logo">ReceptionistAI</span>
-            <p className="footer-tagline">Never miss a call. Never lose a lead.</p>
-          </div>
-          <nav className="footer-nav" aria-label="Footer navigation">
-            <a href="#demo">Demo</a>
-            <a href="#how-it-works">How It Works</a>
-            <a href="#features">Features</a>
-            <a href="#use-cases">Use Cases</a>
-            <a href="#faq">FAQ</a>
-          </nav>
-          <p className="footer-copy">&copy; {new Date().getFullYear()} ReceptionistAI. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }

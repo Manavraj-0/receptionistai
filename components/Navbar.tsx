@@ -6,21 +6,23 @@ export default function Navbar() {
       <div className="container nav-container">
 
         {/* Brand */}
-        <a href="#" className="brand">
-          Receptionist<span className="brand-accent">AI</span>
+        <a href="/" className="brand">
+          Daizy<span className="brand-accent">AI</span>
         </a>
 
         {/* Desktop Links — centred */}
         <div className="nav-links">
-          <a href="#how-it-works" className="nav-link">How It Works</a>
-          <a href="#features" className="nav-link">Features</a>
-          <a href="#use-cases" className="nav-link">Use Cases</a>
-          <a href="#contact" className="nav-link">Contact</a>
+          <a href="/#how-it-works" className="nav-link">How It Works</a>
+          <a href="/#features" className="nav-link">Features</a>
+          <a href="/#use-cases" className="nav-link">Use Cases</a>
+          <a href="/#pricing" className="nav-link">Pricing</a>
+          <a href="/about" className="nav-link">About</a>
+          <a href="/#contact" className="nav-link">Contact</a>
         </div>
 
         {/* Right actions */}
         <div className="nav-actions">
-          <a href="#demo" className="nav-cta-outline">Try the Demo</a>
+          <a href="/#demo" className="nav-cta-outline">Try the Demo</a>
 
           {/* Hamburger — CSS-only toggle */}
           <label htmlFor="mobile-menu-toggle" className="mobile-menu-btn" aria-label="Toggle menu">
@@ -39,11 +41,13 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div className="mobile-menu">
-        <a href="#how-it-works">How It Works</a>
-        <a href="#features">Features</a>
-        <a href="#use-cases">Use Cases</a>
-        <a href="#contact">Contact</a>
-        <a href="#demo" className="mobile-menu-cta">Try the Demo</a>
+        <a href="/#how-it-works">How It Works</a>
+        <a href="/#features">Features</a>
+        <a href="/#use-cases">Use Cases</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/about">About</a>
+        <a href="/#contact">Contact</a>
+        <a href="/#demo" className="mobile-menu-cta">Try the Demo</a>
       </div>
     </nav>
   );

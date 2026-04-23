@@ -2,8 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "AI Receptionist | Never Miss a Call Again",
+  title: "DaizyAI | Never Miss a Call Again",
   description: "Stop missing calls and start booking appointments automatically with our custom AI receptionist.",
+  icons: {
+    icon: "/icon.svg",
+  },
 };
 
 import Navbar from "@/components/Navbar";
