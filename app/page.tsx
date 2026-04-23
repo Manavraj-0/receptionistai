@@ -1,4 +1,6 @@
 import Footer from "@/components/Footer";
+import GetStartedForm from "@/components/GetStartedForm";
+import PlanCTA from "@/components/PlanCTA";
 
 export default function Home() {
   return (
@@ -354,6 +356,37 @@ export default function Home() {
               </a>
             </div>
           </div>
+
+          {/* Pilot Strip - Horizontal, secondary */}
+          <div className="pricing-pilot-strip">
+            <div className="pilot-strip-content">
+              <div className="pilot-strip-info">
+                <h3 className="pilot-strip-title">Not ready to commit? Try our Pilot Bundle</h3>
+                <p className="pilot-strip-desc">Test the system with real calls before upgrading</p>
+                <div className="pilot-strip-features">
+                  <span className="pilot-feature-inline">100 minutes</span>
+                  <span className="pilot-dot">•</span>
+                  <span className="pilot-feature-inline">1 call handling system</span>
+                  <span className="pilot-dot">•</span>
+                  <span className="pilot-feature-inline">Lead capture</span>
+                </div>
+              </div>
+              <div className="pilot-strip-actions">
+                <div className="pilot-strip-price">
+                  <div className="pilot-price-main">
+                    <span className="pilot-amount">£99</span>
+                    <span className="pilot-period"></span>
+                  </div>
+                  <span className="pilot-setup">+ £49 Onboarding</span>
+                </div>
+                <PlanCTA plan="Pilot" className="pilot-strip-cta">
+                  Try Pilot
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                </PlanCTA>
+              </div>
+            </div>
+          </div>
+
           <div className="pricing-cards pricing-cards--three">
 
             {/* Starter Plan */}
@@ -384,14 +417,17 @@ export default function Home() {
                 </ul>
               </div>
               <div className="pricing-card-footer">
-                <div className="pricing-price">
-                  <span className="pricing-amount">&pound;299</span>
-                  <span className="pricing-period">/ month</span>
+                <div className="pricing-price-group">
+                  <div className="pricing-price">
+                    <span className="pricing-amount">£299</span>
+                    <span className="pricing-period">/ month</span>
+                  </div>
+                  <p className="pricing-onboarding">+ £200 Onboarding</p>
                 </div>
-                <a href="mailto:daizyaiinfo@gmail.com" className="pricing-cta pricing-cta--light">
+                <PlanCTA plan="Starter" className="pricing-cta pricing-cta--light">
                   Get started
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
-                </a>
+                </PlanCTA>
               </div>
             </div>
 
@@ -426,14 +462,17 @@ export default function Home() {
                 </ul>
               </div>
               <div className="pricing-card-footer">
-                <div className="pricing-price">
-                  <span className="pricing-amount pricing-amount--white">&pound;599</span>
-                  <span className="pricing-period pricing-period--white">/ month</span>
+                <div className="pricing-price-group">
+                  <div className="pricing-price">
+                    <span className="pricing-amount pricing-amount--white">£599</span>
+                    <span className="pricing-period pricing-period--white">/ month</span>
+                  </div>
+                  <p className="pricing-onboarding">+ £400 Onboarding</p>
                 </div>
-                <a href="mailto:daizyaiinfo@gmail.com" className="pricing-cta pricing-cta--accent">
+                <PlanCTA plan="Growth" className="pricing-cta pricing-cta--accent">
                   Get started
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
-                </a>
+                </PlanCTA>
               </div>
             </div>
 
@@ -465,14 +504,17 @@ export default function Home() {
                 </ul>
               </div>
               <div className="pricing-card-footer">
-                <div className="pricing-price">
-                  <span className="pricing-amount">&pound;999</span>
-                  <span className="pricing-period">/ month</span>
+                <div className="pricing-price-group">
+                  <div className="pricing-price">
+                    <span className="pricing-amount">£999</span>
+                    <span className="pricing-period">/ month</span>
+                  </div>
+                  <p className="pricing-onboarding">+ £800 Onboarding</p>
                 </div>
-                <a href="mailto:daizyaiinfo@gmail.com" className="pricing-cta pricing-cta--light">
+                <PlanCTA plan="Scale" className="pricing-cta pricing-cta--light">
                   Get started
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
-                </a>
+                </PlanCTA>
               </div>
             </div>
 
@@ -632,17 +674,16 @@ export default function Home() {
       {/* Final CTA Section */}
       <section id="contact" className="cta-section">
         <div className="container cta-container">
-          <p className="cta-eyebrow">Get Started</p>
-          <h2 className="cta-headline">
-            Your next missed call<br />doesn't have to be.
-          </h2>
-          <p className="cta-subtext">
-            We'll build your AI receptionist, configure it to your business, and have it live within days. No long contracts. No technical overhead.
-          </p>
-          <div className="cta-actions">
-            <a href="tel:+441234987233" className="cta-btn-primary">Call the Demo First</a>
-            <a href="mailto:daizyaiinfo@gmail.com" className="cta-btn-secondary">Get in Touch</a>
+          <div className="cta-text">
+            <p className="cta-eyebrow">Get Started</p>
+            <h2 className="cta-headline">
+              Your next missed call<br />doesn&apos;t have to be.
+            </h2>
+            <p className="cta-subtext">
+              We&apos;ll build your AI receptionist, configure it to your business, and have it live within days. No long contracts. No technical overhead.
+            </p>
           </div>
+          <GetStartedForm />
         </div>
       </section>
 
