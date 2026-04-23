@@ -377,7 +377,7 @@ export default function Home() {
                     <span className="pilot-amount">£99</span>
                     <span className="pilot-period"></span>
                   </div>
-                  <span className="pilot-setup">+ £49 Onboarding</span>
+                  <span className="pilot-setup">+ £50 Onboarding</span>
                 </div>
                 <PlanCTA plan="Pilot" className="pilot-strip-cta">
                   Try Pilot
