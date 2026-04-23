@@ -2338,16 +2338,15 @@ section h2 {
 }
 
 .about-team-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-}
-
-.about-team-grid--three {
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .about-team-card {
+  flex: 1 1 350px;
+  max-width: 440px;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -2473,9 +2472,8 @@ section h2 {
   .about-value-card:last-child {
     border-bottom: 1px solid var(--border-color);
   }
-  .about-team-grid,
-  .about-team-grid--three {
-    grid-template-columns: 1fr;
+  .about-team-grid {
+    gap: 1.5rem;
   }
 }
 

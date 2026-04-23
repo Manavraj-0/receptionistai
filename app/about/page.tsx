@@ -95,7 +95,7 @@ export default function About() {
             <p className="about-eyebrow">The Team</p>
             <h2 className="about-section-title">Built by people who<br />understand both sides.</h2>
           </div>
-          <div className="about-team-grid about-team-grid--three">
+          <div className="about-team-grid">
 
             {/* Prasanna */}
             <div className="about-team-card">
@@ -115,17 +115,6 @@ export default function About() {
                 <p className="about-team-role">Co-founder · AI &amp; Systems</p>
                 <p className="about-team-bio">
                   Manav leads the technical side of DaizyAI — designing the AI workflows, voice configurations, and system integrations that power each deployment. With a deep background in artificial intelligence and automation architecture, he ensures every receptionist we build doesn&apos;t just work, but works intelligently: handling edge cases, adapting to context, and improving over time.
-                </p>
-              </div>
-            </div>
-
-            {/* Prem */}
-            <div className="about-team-card">
-              <div className="about-team-info">
-                <h3 className="about-team-name">Prem Vaniya</h3>
-                <p className="about-team-role">Co-founder · Advertising &amp; Acquisition</p>
-                <p className="about-team-bio">
-                  Prem runs and manages the paid advertising side of DaizyAI — building, optimising, and scaling Meta Ads campaigns that keep a steady flow of qualified enquiries coming in. He ensures every pound of ad spend translates into real conversations, so the AI systems our clients rely on are never short of calls to handle.
                 </p>
               </div>
             </div>
