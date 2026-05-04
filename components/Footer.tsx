@@ -16,6 +16,10 @@ export default function Footer() {
           <a href="/#faq">FAQ</a>
         </nav>
         <p className="footer-copy">&copy; {new Date().getFullYear()} DaizyAI. All rights reserved.</p>
+        <div className="footer-legal">
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/terms">Terms &amp; Conditions</a>
+        </div>
       </div>
     </footer>
   );

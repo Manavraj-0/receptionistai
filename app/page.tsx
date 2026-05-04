@@ -368,7 +368,7 @@ export default function Home() {
                   <span className="pilot-dot">•</span>
                   <span className="pilot-feature-inline">1 call handling system</span>
                   <span className="pilot-dot">•</span>
-                  <span className="pilot-feature-inline">Lead capture</span>
+                  <span className="pilot-feature-inline">Email lead notifications</span>
                 </div>
               </div>
               <div className="pilot-strip-actions">
@@ -397,6 +397,7 @@ export default function Home() {
                 <div className="pricing-card-rule"></div>
               </div>
               <div className="pricing-card-body">
+                <div className="pricing-group-label">CALL HANDLING</div>
                 <ul className="pricing-features">
                   <li className="pricing-feature">
                     <svg className="pricing-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -408,8 +409,29 @@ export default function Home() {
                   </li>
                   <li className="pricing-feature">
                     <svg className="pricing-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    Lead qualification &amp; booking
+                    Lead qualification
                   </li>
+                  <li className="pricing-feature">
+                    <svg className="pricing-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Call summaries after every call
+                  </li>
+                  {/*<li className="pricing-feature">
+                    <svg className="pricing-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    After-hours &amp; business hours handling
+                  </li>*/}
+                </ul>
+
+                <div className="pricing-group-label">NOTIFICATIONS</div>
+                <ul className="pricing-features">
+                  <li className="pricing-feature">
+                    <svg className="pricing-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <img className="notif-icon" src="/gmail-icon.svg" alt="Gmail" />
+                    Email lead notifications
+                  </li>
+                </ul>
+
+                <div className="pricing-group-label">SUPPORT</div>
+                <ul className="pricing-features">
                   <li className="pricing-feature">
                     <svg className="pricing-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                     Ongoing support
@@ -442,6 +464,7 @@ export default function Home() {
                 <div className="pricing-card-rule pricing-card-rule--dark"></div>
               </div>
               <div className="pricing-card-body">
+                <div className="pricing-group-label">CALL HANDLING</div>
                 <ul className="pricing-features">
                   <li className="pricing-feature">
                     <svg className="pricing-check pricing-check--accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -449,12 +472,34 @@ export default function Home() {
                   </li>
                   <li className="pricing-feature">
                     <svg className="pricing-check pricing-check--accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    Up to 1000 minutes / month
+                    Up to 1,000 minutes / month
                   </li>
                   <li className="pricing-feature">
                     <svg className="pricing-check pricing-check--accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    Advanced workflows
+                    Calendar / booking integration
                   </li>
+                  <li className="pricing-feature">
+                    <svg className="pricing-check pricing-check--accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Everything in Starter
+                  </li>
+                </ul>
+
+                <div className="pricing-group-label">NOTIFICATIONS</div>
+                <ul className="pricing-features">
+                  <li className="pricing-feature">
+                    <svg className="pricing-check pricing-check--accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <img className="notif-icon" src="/gmail-icon.svg" alt="Gmail" />
+                    Email lead notifications
+                  </li>
+                  <li className="pricing-feature">
+                    <svg className="pricing-check pricing-check--accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <img className="notif-icon" src="/whatsapp-icon.svg" alt="WhatsApp" />
+                    WhatsApp lead notifications
+                  </li>
+                </ul>
+
+                <div className="pricing-group-label">SUPPORT</div>
+                <ul className="pricing-features">
                   <li className="pricing-feature">
                     <svg className="pricing-check pricing-check--accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                     Priority support
@@ -484,19 +529,46 @@ export default function Home() {
                 <div className="pricing-card-rule"></div>
               </div>
               <div className="pricing-card-body">
+                <div className="pricing-group-label">CALL HANDLING</div>
+                <ul className="pricing-features">
+                  {/*<li className="pricing-feature">
+                    <svg className="pricing-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Multiple workflows / systems
+                  </li>*/}
+                  <li className="pricing-feature">
+                    <svg className="pricing-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Up to 2,000 minutes / month
+                  </li>
+                  {/*<li className="pricing-feature">
+                    <svg className="pricing-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Calls routed to the right team automatically
+                  </li>*/}
+                  <li className="pricing-feature">
+                    <svg className="pricing-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Monthly optimisation review call
+                  </li>
+                  <li className="pricing-feature">
+                    <svg className="pricing-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Everything in Growth
+                  </li>
+                </ul>
+
+                <div className="pricing-group-label">NOTIFICATIONS</div>
                 <ul className="pricing-features">
                   <li className="pricing-feature">
                     <svg className="pricing-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    Multiple workflows / systems
+                    <img className="notif-icon" src="/gmail-icon.svg" alt="Gmail" />
+                    Email lead notifications
                   </li>
                   <li className="pricing-feature">
                     <svg className="pricing-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    Higher usage capacity
+                    <img className="notif-icon" src="/whatsapp-icon.svg" alt="WhatsApp" />
+                    WhatsApp notifications (simultaneous)
                   </li>
-                  <li className="pricing-feature">
-                    <svg className="pricing-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    Advanced routing &amp; logic
-                  </li>
+                </ul>
+
+                <div className="pricing-group-label">SUPPORT</div>
+                <ul className="pricing-features">
                   <li className="pricing-feature">
                     <svg className="pricing-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                     Ongoing optimisation
@@ -518,6 +590,16 @@ export default function Home() {
               </div>
             </div>
 
+          </div>
+
+          {/* Usage Note Strip */}
+          <div className="pricing-footer-note">
+            <div className="pricing-note-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            </div>
+            <p className="pricing-note-text">
+              Need more minutes? Additional usage beyond your plan limit is billed at <strong>&pound;0.70 / min</strong> and charged at the end of the month — no interruptions to your service.
+            </p>
           </div>
 
           {/* Meta Ads Management Add-on */}
