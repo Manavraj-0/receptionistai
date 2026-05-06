@@ -47,7 +47,7 @@ export default function Home() {
             <p className="demo-label">Voice AI Demo</p>
             <h2>Speak to our AI.<br />Let it speak for itself.</h2>
             <p className="demo-desc">
-              George handles inbound calls exactly as a trained receptionist would — without the overheads. Call the number and hear it firsthand.
+              Ella handles inbound calls exactly as a trained receptionist would — without the overheads. Call the number and hear it firsthand.
             </p>
             <div className="demo-capabilities">
               <div className="demo-capability-item">
@@ -82,7 +82,7 @@ export default function Home() {
                 System Active
               </div>
               <div className="demo-card-body-minimal">
-                <div className="ai-monogram">George</div>
+                <div className="ai-monogram">Ella</div>
                 <h3>Voice Agent Direct</h3>
                 <a href="tel:+441234987233" className="phone-number-display">+44 1234 987233</a>
                 <p className="demo-note-minimal">Tap to call. Available around the clock.</p>
